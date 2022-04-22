@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_indonesia_2021/application/auth/cubit/auth_cubit.dart';
-import 'package:flutter_indonesia_2021/presentation/home/home_page.dart';
 import 'package:flutter_indonesia_2021/presentation/sign_in/sign_in_page.dart';
+import 'package:flutter_indonesia_2021/presentation/user/user_page.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -23,7 +23,8 @@ class _SplashScreenState extends State<SplashScreen> {
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                builder: (context) => HomePage(),
+                // builder: (context) => HomePage(),
+                builder: (context) => UserPage(),
               ),
             );
           } else if (state is AuthError) {
