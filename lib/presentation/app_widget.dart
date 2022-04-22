@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_indonesia_2021/presentation/home/home_page.dart';
-import 'package:flutter_indonesia_2021/presentation/sign_in/sign_in_page.dart';
+import 'package:flutter_indonesia_2021/presentation/splash_screen/splash_screen.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);
@@ -12,7 +11,7 @@ class AppWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SignInPage(),
+      home: SplashScreen(),
     );
   }
 }
